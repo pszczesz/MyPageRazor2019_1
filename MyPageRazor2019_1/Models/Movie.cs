@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace MyPageRazor2019_1.Models {
     public class Movie {
@@ -6,7 +7,7 @@ namespace MyPageRazor2019_1.Models {
         public string Title { get; set; }
 
         [DataType(DataType.Date)]
-        public DataType ReleaseDate { get; set; }
+        public DateTime ReleaseDate { get; set; }
 
         public string Genre { get; set; }
         public decimal Price { get; set; }

@@ -38,6 +38,8 @@ namespace MyPageRazor2019_1
 
             services.AddDbContext<MyPageRazor2019_1Context>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("MyPageRazor2019_1Context")));
+
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
